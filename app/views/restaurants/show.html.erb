@@ -1,0 +1,22 @@
+<h1><%= @restaurant.name %></h1>
+
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+<p>Category:<%= @restaurant.category %></p>
+
+<% if @restaurant.reviews.any? %>
+  <ul>
+    <%= render @restaurant.reviews %>
+  </ul>
+<% else %>
+  <p>No review yet</p>
+<% end %>
+
+<h3> Add a review</h3>
+
+<%= render "reviews/form", review: @review %>
+
+<h3> Delete a <Restaurent></Restaurent></h3>
+<%= link_to "Delete Restaurant", restaurant_path(@restaurant),
+            data: { turbo_method: :delete, confirm: "Are you sure?" },
+            class: "btn btn-danger" %>

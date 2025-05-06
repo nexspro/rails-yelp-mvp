@@ -1,6 +1,6 @@
 #  Rails Yelp MVP
 
-A minimal Ruby on Rails application that allows users to create, view, and review restaurants — built to practice core CRUD operations and MVC architecture.
+A minimal Ruby on Rails application that allows users to create, view, and review restaurants  built to practice core CRUD operations and MVC architecture.
 
 ---
 
